@@ -12,7 +12,7 @@
 # http://www.apache.org/licenses/
 #-------------------------------------------------------------------------------
 
-import datetime, time, sys, os
+import datetime, time, sys, os, arcpy
 
 scriptPath = sys.path[0]
 
@@ -77,3 +77,4 @@ else:
         print ("Downloaded MODIS Data")
 
 
+arcpy.SetParameter(0,downloadfolder)
