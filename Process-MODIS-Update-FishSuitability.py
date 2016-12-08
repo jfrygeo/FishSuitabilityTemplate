@@ -1,5 +1,5 @@
 #-------------------------------------------------------------------------------
-# Name:        MODIS-Link-Retrieve
+# Name:        Process-MODIS-Update-FishSuitability
 # Purpose:     Retrieve latest NetCDF chlorophyll file from NASA MODIS - Different URLS than other script in this Repo
 #
 # Author:      JFry
@@ -81,7 +81,17 @@ else:
 
         print ("Downloaded MODIS Data")
 
-
+#Output of the folder where the date would be downloaded
 arcpy.SetParameter(0,downloadfolder)
 
+#add rasters to Mosaic Dataset
+MosaicDataset = "\FishSuitability.gdb\MODIS"
+RasterType = "NetCDF"
+
+#input the rest of the parameters here
+
+
+arcpy.AddRastersToMosaicDataset_management(MosaicDataset,"netcdf",)
+
+#
 quit()
