@@ -15,9 +15,9 @@
 import datetime, time
 
 #this would be your input
-ExampleString = "A.2016340.L3m_DAY_SST4_sst4_4km"
+#ExampleString = "A.2016340.L3m_DAY_SST4_sst4_4km"
 
-def getdate (ExampleString):
+def getdate ():
     timesplit = str(ExampleString.split(".")[1])
     print (timesplit)
     year = int(timesplit[0:4])
@@ -30,4 +30,4 @@ def getdate (ExampleString):
     print (t5)
     return (t5)
 
-getdate(ExampleString)
+getdate()

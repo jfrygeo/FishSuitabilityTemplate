@@ -58,6 +58,7 @@ print ("Downloading SST " + dlMODISdataSST)
 
 if sys.version_info[0]== 3:
     import urllib.request
+    from .DOYtoTime import getdate
     #What Python
     sysver = sys.version
     print (sysver)
@@ -69,6 +70,7 @@ if sys.version_info[0]== 3:
 else:
     if sys.version_info[0]== 2:
         import urllib
+        from DOYtoTime import getdate
         sysver = sys.version
         print (sysver)
         urllib.urlretrieve(dlMODISdataChl, downloadlocationChl)
