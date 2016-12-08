@@ -17,7 +17,10 @@ import datetime, time, sys, os, arcpy
 scriptPath = sys.path[0]
 
 # local folder where wanting to download data
-downloadfolder = sys.path[0] + "\\Data\\"
+downloadfolder = sys.path[0] + ("\\Data\\")
+
+if not os.path.exists(downloadfolder):
+    os.makedirs(downloadfolder)
 
 ##Base Urls where data resides
 baseurl = "http://coastwatch.pfeg.noaa.gov/erddap/files/"
@@ -58,7 +61,7 @@ print ("Downloading SST " + dlMODISdataSST)
 
 if sys.version_info[0]== 3:
     import urllib.request
-    from .DOYtoTime import getdate
+#    from .DOYtoTime import getdate
     #What Python
     sysver = sys.version
     print (sysver)
@@ -70,7 +73,7 @@ if sys.version_info[0]== 3:
 else:
     if sys.version_info[0]== 2:
         import urllib
-        from DOYtoTime import getdate
+#        from DOYtoTime import getdate
         sysver = sys.version
         print (sysver)
         urllib.urlretrieve(dlMODISdataChl, downloadlocationChl)
@@ -80,3 +83,5 @@ else:
 
 
 arcpy.SetParameter(0,downloadfolder)
+
+sys.exit()
