@@ -2,9 +2,9 @@
 The fish suitability template contains a solution which could be used as a template to download new data from MODIS and update an image service with this new data. 
 
 There are multiple parts of this template:
-<li> 1. Process-MODIS-Data-py - A python script that downloads new data from [NASA MODIS](https://modis.gsfc.nasa.gov/about) and adds the data to a mosaic dataset.</li>
-<li> 2. Fish Suitability.rft - A raster function template that sits on top of the Mosaic Dataset which does the mathematics of creating fish suitability.
-<li> 3. Fish Suitability.mxd - An ArcMap document which contains sample data.
+1. Process-MODIS-Data-py - A python script that downloads new data from [NASA MODIS](https://modis.gsfc.nasa.gov/about) and adds the data to a mosaic dataset.</li>
+2. Fish Suitability.rft - A raster function template that sits on top of the Mosaic Dataset which does the mathematics of creating fish suitability.
+3. Fish Suitability.mxd - An ArcMap document which contains sample data.
 
 
 ## MODIS
