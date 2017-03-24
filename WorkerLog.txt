@@ -1,0 +1,6 @@
+11-12-0116 14:40:30   LocalWorker Process Started. PID=2670 ServiceID=ImageServerWorker:1 ThreadCount=1
+
+11-12-0116 14:40:33   LocalWorker Process Started. PID=2924 ServiceID=ImageServerWorker:2 ThreadCount=1
+
+11-12-0116 14:40:50   LocalWorker Process Exited Normally.
+11-12-0116 14:40:50   LocalWorker Process Exited Normally.
